@@ -340,7 +340,7 @@ function setLoading(on) {
 async function callGemini(ctx) {
     const body = JSON.stringify({
         systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
-        generationConfig:  { temperature: 0.9 },
+        generationConfig:  { temperature: 0.5 },
         contents: ctx
     });
     let lastStatus = 0;
