@@ -396,12 +396,10 @@ msgInput.addEventListener('keydown', e => { if (e.key === 'Enter') send(); });
 
 // ── Mensaje inicial de Lady ─────────────────────────────────────────────
 (async () => {
-    console.log('[init] chatbot cargado. API_KEYS length:', API_KEYS.length, 'keyIndex inicial:', keyIndex);
     await new Promise(r => setTimeout(r, 700));
     setLoading(true);
     await new Promise(r => setTimeout(r, 1800));
     setLoading(false);
-    addBubble(`[v2 cargado · key ${keyIndex + 1}/${API_KEYS.length}]`, 'lady');
 })();
 </script>
 </body>
